@@ -1,0 +1,223 @@
+@media screen and (max-width: 1023px) {
+  .hero__images-right {
+    transform: translate(0);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    padding: 0 20px;
+  }
+  .header__list {
+    display: none;
+  }
+  .hero__content,
+  .features__content {
+    max-width: 50%;
+  }
+  .hero__content-title {
+    font-size: 40px;
+  }
+
+  .hero__profile {
+    padding: 0;
+  }
+  .features__main {
+    gap: 0 30px;
+    padding-bottom: 40px;
+  }
+  .features__content-title {
+    font-size: 35px;
+  }
+  .plan__main {
+    gap: 0;
+  }
+  .plan__main-content {
+    width: calc(33.33% - 10px);
+  }
+  .map {
+    margin-top: 110px;
+  }
+  .map__logo {
+    justify-content: center;
+  }
+  .map__content {
+    margin-top: 50px;
+  }
+  .map__content-box {
+    display: grid;
+    margin: 0 10px;
+    justify-content: flex-start;
+    grid-auto-columns: 45%;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    grid-template-columns: unset;
+  }
+  .map__content-box::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .map__content-box > * {
+    scroll-snap-align: start;
+  }
+  .map__sub {
+    background-color: red;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .map__sub-main {
+    padding: 30px 36px;
+    max-width: 100%;
+  }
+  .footer__main-list {
+    padding-left: 30px;
+  }
+  .footer__main-social {
+    margin-right: 60px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 767px) {
+  .header__login {
+    display: none;
+  }
+  .icon-menu {
+    display: block;
+  }
+  .header__list {
+    display: block;
+  }
+  .flex-between {
+    flex-direction: column;
+  }
+  header.header.layout-wrapper.flex-between {
+    flex-direction: inherit;
+    margin: 0;
+    padding: 30px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--clr-white);
+    z-index: 99;
+  }
+  .hero__content-title,
+  .map__title,
+  .map__content-title {
+    font-size: 34px;
+  }
+  .hero__btn {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .hero {
+    margin-top: 30%;
+  }
+  .hero__profile {
+    margin-top: 80px;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px 0;
+  }
+  .features__main {
+    margin-top: 70px;
+    padding-bottom: 0;
+  }
+  .hero__profile-content::before {
+    display: none;
+  }
+  .map__title-desc {
+    margin-bottom: 20px;
+  }
+  .plan__main,
+  .map__content-box,
+  .footer__main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px 0;
+  }
+  .plan__title-desc {
+    max-width: 100%;
+  }
+  .plan__main-content {
+    width: 100%;
+  }
+  .map__sub-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .map__sub-desc {
+    text-align: center;
+  }
+  .map__sub-main {
+    padding: 30px 0;
+    flex-direction: column;
+    gap: 40px 0;
+  }
+  .btn-sub {
+    padding: 18px 12 0px;
+  }
+  .map__content-title {
+    margin-top: 20px;
+  }
+  .footer__main-social {
+    margin-right: 0;
+  }
+  .footer__main {
+    margin-top: 50px;
+  }
+  .footer__main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__main-list {
+    padding-left: 0;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-left: 5px;
+    transform: translateX(100%);
+    transition: transform 0.25s linear;
+    background-color: var(--clr-white);
+    padding-bottom: 20px;
+    margin: 0;
+    z-index: 99;
+  }
+  .menu.is-show {
+    transform: translateX(0);
+  }
+  .map__content-box {
+    margin: 0 10px;
+  }
+  .header__list {
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  .header__items {
+    display: block;
+    color: #333;
+    padding: 16px 0;
+    border-bottom: 1px solid #000;
+  }
+  .menu-mb {
+    cursor: pointer;
+    font-size: 30px;
+    position: relative;
+    z-index: 9999;
+    display: block;
+  }
+}

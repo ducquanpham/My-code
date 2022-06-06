@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+.joke {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 50px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+.joke-heading {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.joke-button {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  display: block;
+  padding: 0 30px;
+  border-radius: 10px;
+  color: white;
+  background-color: #20e3b2;
+  position: relative;
+  max-width: 100%;
+  width: 200px;
+  height: 55px;
+}
+span {
+}
+.loader {
+  width: 20px;
+  height: 20px;
+  border: 3px solid white;
+  border-left: 5px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 1s infinite linear forwards;
+  display: none;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+  from {
+    transform: rotate(0deg);
+  }
+}
+.joke.is-loading .joke-button {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.joke.is-loading .joke-button .loader {
+  display: block;
+}
+.joke.is-loading .joke-button span {
+  display: none;
+}
+/* picsum photos*/
+.images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px;
+  grid-gap: 25px;
+}
+.images-item {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #eee;
+  height: 220px;
+}
+.images-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.load-more {
+  display: block;
+  width: max-content;
+  padding: 15px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  background-color: #2cccff;
+  border: 0;
+  margin: 25px auto;
+}
+.image-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 1s infinite linear forwards;
+  width: 50px;
+  height: 50px;
+  border: 5px solid purple;
+  border-radius: 50%;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+  from {
+    transform: rotate(0deg);
+  }
+}

@@ -1,0 +1,32 @@
+.title {
+  color: #20e3b2;
+  margin: 170px auto;
+  width: max-content;
+  display: block;
+  font-size: 20px;
+}
+.tooltip {
+  position: relative;
+}
+.tooltip-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  background-color: #2cccff;
+  padding: 10px 20px;
+  display: block;
+  color: write;
+  border-radius: 50rem;
+}
+.tooltip-text::before {
+  content: "";
+  position: absolute;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #2cccff;
+}

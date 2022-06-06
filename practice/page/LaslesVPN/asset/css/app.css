@@ -1,0 +1,41 @@
+:root {
+  --clr-orange: #f53838;
+  --text-title: #0b132a;
+  --text-desc: #4f5665;
+  --bg-Plan: #fdfdfd;
+  --clr-white: #ffffff;
+}
+.container {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.layout-wrapper {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.layout-YourPlan {
+  max-width: 1070px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.layout-map {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-center {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}

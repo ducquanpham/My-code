@@ -1,0 +1,19 @@
+if (!String.prototype.includes) {
+  String.prototype.includes = function (search, start) {
+    "use strict";
+
+    if (search instanceof RegExp) {
+      throw TypeError("first argument must not be a RegExp");
+    }
+    if (start === undefined) {
+      start = 0;
+    }
+    return this.indexOf(search, start) !== -1;
+  };
+}
+"Javascript courses".includes("javascript", 0);
+function myFunction(param) {
+  console.log(typeof param);
+}
+function myCallBack() {}
+myFunction(123);

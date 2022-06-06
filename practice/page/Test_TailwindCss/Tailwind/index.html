@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <link rel="stylesheet" href="./build/tailwind.css" />
+    <link rel="stylesheet" href="./build/app.css" />
+    <link rel="stylesheet" href="./build/reset.css" />
+    <link rel="stylesheet" href="./build/main.css" />
+    <title>TailwindCss</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- link icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;0,600;0,800;1,300;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aos animation-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header
+      class="fixed top-[0%] left-[0%] right-[0%] z-10 block w-full max-w-full mx-auto bg-white"
+    >
+      <div class="layout-container">
+        <div class="flex items-center justify-between align-baseline xl:py-5">
+          <div class="text-xl font-bold text-green-600">Alivio</div>
+          <div>
+            <ul class="z-10 justify-center align-baseline menu xl:flex gap-x-5">
+              <li
+                class="header-items block text-[#333] py-20px border-b-zinc-900 pt-3"
+              >
+                <a href="#!" class="header-links">Why Alivio</a>
+              </li>
+              <li
+                class="header-items block text-[#333] py-20px border-b-zinc-900 pt-3"
+              >
+                <a href="#!" class="header-links">Solutions</a>
+              </li>
+              <li
+                class="header-items block text-[#333] py-20px border-b-zinc-900 pt-3"
+              >
+                <a href="#!" class="header-links">Community</a>
+                <span class="a"></span>
+              </li>
+              <li
+                class="header-items block text-[#333] py-20px border-b-zinc-900 pt-3"
+              >
+                <a href="#!" class="header-links">Pricing</a>
+              </li>
+            </ul>
+            <div class="menu-icon xl:hidden">
+              <i class="text-xl cursor-pointer fa fa-bars menu-toggle"></i>
+            </div>
+          </div>
+          <div class="justify-center hidden xl:flex gap-x-3">
+            <button type="button" class="btn">Sign in</button>
+            <button
+              type="button"
+              class="btn rounded-sm bg-green hover:bg-[#20bf6b] hover:duration-200 cursor-pointer text-white block px-8 py-2"
+            >
+              Start Trial
+            </button>
+          </div>
+        </div>
+      </div>
+      <p class="bg-textGray w-full h-[1px]"></p>
+    </header>
+    <section class="w-full max-w-full mb-[150px] pt-[70px]">
+      <div class="relative">
+        <img src="./asset/images/BG.png" alt="" />
+      </div>
+      <div
+        class="absolute 1sm:max-w-full 1sm:w-full xl:top-[25%] px-[10px] translate-Y-[-50%] xl:abs-centery xl:w-[440px] xl:left-[10%]"
+      >
+        <h2 class="text-3xl text-green xl:text-6xl" data-aos="fade-down">
+          Be aware, Manage well.
+        </h2>
+        <p class="my-5 text-lg text-textGray" data-aos="fade-down">
+          Everyone experiences stress in different ways. Let Alivio guide you,
+          in a personalized journal experience, to overcome your stress.
+        </p>
+        <button
+          type="button"
+          class="block font-normal text-white rounded-md cursor-pointer 1sm:w-full 1sm:max-w-full btn-hover color-5 xl:px-4 xl:py-3"
+        >
+          Find Your Way
+        </button>
+      </div>
+    </section>
+    <section class="w-full max-w-full">
+      <div class="layout-container">
+        <div
+          class="flex 1sm:flex-col xl:justify-between items-center 1sm:mt-[168px] xl:mt-0 pb-[150px] xl:pb-[230px]"
+        >
+          <div data-aos="fade-right">
+            <p class="text-xl text-textGray">How it works</p>
+            <h3
+              class="text-green text-3xl xl:text-5xl font-bold mr-0 xl:mr-[110px] leading-normal"
+            >
+              Understand & Release the streets in 3 steps
+            </h3>
+          </div>
+          <div
+            class="text-textGray font-normal text-[18px] max-w-[671px] leading-7"
+            data-aos="fade-left"
+          >
+            Alivio offers as many journals it takes, tackling different areas
+            such as anxiety, overwhelmedness, sadness, or anger, and a variety
+            of personal causes, to help you become aware of your emotions, and
+            guide you in how to manage stress.
+          </div>
+        </div>
+        <div class="content">
+          <div
+            class="grid grid-cols-1 xl:grid-cols-3 gap-x-0 pr-0 xl:gap-x-24 mt-[40px] xl:pr-5 mb-10"
+          >
+            <div class="relative" data-aos="fade-right">
+              <span
+                class="absolute text-[7rem] left-3 xl:text-[10rem] text-green-100 top-[-15.5%] xl:top-[-19.5%] xl:left-10 -z-1"
+                >01</span
+              >
+              <h4
+                class="z-10 text-lg font-bold text-left xl:text-center text-textSilver"
+              >
+                Rersonalize
+              </h4>
+              <p class="my-11">
+                Answer a quick survey about how you express yourself, what
+                causes you stress, and what area would you like to work on. This
+                way, we can fully personalize your journal!
+              </p>
+              <div class="overflow-hidden rounded-md" alt="" data-aos="zoom-in">
+                <img
+                  src="./asset/images/Rectangle 30 (1).png"
+                  class="block object-cover w-full max-w-full overflow-hidden rounded-md cursor-pointer hover:scale-110 hover:duration-1000 image"
+                />
+              </div>
+            </div>
+
+            <div class="relative mt-[150px] xl:mt-[270px]" data-aos="fade-down">
+              <span
+                class="absolute text-[7rem] left-2 xl:text-[10rem] text-green-100 top-[-16%] xl:top-[-27%] xl:left-12 -z-1"
+                >02</span
+              >
+              <h4
+                class="text-lg font-bold text-left xl:text-center text-textSilver"
+              >
+                Write & Understand
+              </h4>
+              <p class="my-11">
+                Write, draw, reflect, understand. Alivio will guide you through
+                the prompts and will help you manage your stress!
+              </p>
+              <div class="overflow-hidden rounded-md" data-aos="zoom-in">
+                <img
+                  src="./asset/images/Rectangle 30.png"
+                  class="block object-cover w-full max-w-full overflow-hidden rounded-md cursor-pointer hover:scale-110 hover:duration-1000 image"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="relative mt-40 xl:mt-10" data-aos="fade-left">
+              <span
+                class="absolute text-[7rem] xl:text-[10rem] text-green-100 top-[-17%] left-0 -z-1"
+                >03
+              </span>
+              <h4
+                class="text-lg font-bold text-left xl:text-center text-textSilver"
+              >
+                Alivio!
+              </h4>
+              <p class="my-11">
+                Now you are aware, and have a way to manage and overcome your
+                own stress.
+              </p>
+              <div class="overflow-hidden rounded-md" alt="" data-aos="zoom-in">
+                <img
+                  src="./asset/images/Group 29.png"
+                  class="block object-cover w-full max-w-full overflow-hidden rounded-md cursor-pointer hover:scale-110 hover:duration-1000 image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full max-w-full bg-bgFooter">
+      <div class="layout-container">
+        <div
+          class="1sm:px-10 1sm:py-10 xl:pt-[230px] xl:pr-[206px] xl:pb-[206px] xl:pl-[180px]"
+        >
+          <div class="flex items-center 1sm:flex-col xl:justify-center">
+            <div class="xl:pr-[77px]">
+              <h2 class="text-4xl leading-normal text-white">
+                Let's hear about<br />
+                Kayla's success story
+              </h2>
+              <p class="my-10 text-white">
+                See how well Alivio works in a real customer’s life.
+              </p>
+              <button
+                type="button"
+                class="w-full max-w-full font-light text-white rounded-sm cursor-pointer xl:px-10 xl:py-4 bg-green glow-on-hover"
+              >
+                Let's get started
+              </button>
+            </div>
+            <div
+              class="w-full max-w-full mt-10 xl:max-w-[50%] rounded-sm overflow-hidden"
+              data-aos="zoom-out-down"
+            >
+              <video width="500px" controls>
+                <source src="./asset/images/video.mp4" type="video/mp4" />
+                <source src="./asset/images/video.mp4.ogg" type="video/ogg" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full max-w-full">
+      <div class="layout-container">
+        <div
+          class="mt-[77px] flex 1sm:flex-col xl:justify-center gap-x-[86px] relative mb-[100px] xl:mb-[243px]"
+        >
+          <div class="rounded-md overflow-hidden bg-green33 px-[104px]">
+            <img
+              src="./asset/images/court-cook-TSZo17r3m0s-unsplash-removebg 1.png"
+              alt=""
+            />
+          </div>
+          <div class="max-w-full xl:max-w-[34%]">
+            <h4 class="text-xl">Our Product</h4>
+            <h2 class="my-5 text-4xl font-bold leading-normal text-green">
+              You tell us your stress, We make your diary
+            </h2>
+            <p class="mb-5 text-textGray">
+              Everyone experiences it, and in different ways. Let Alivio guide
+              you, in a personalized journal experience, to overcome your
+              stress.
+            </p>
+            <button
+              type="button"
+              class="1sm:w-full 1sm:max-w-full py-4 text-white rounded-sm hover:bg-[#2ecc71] hover:duration-200 cursor-pointer xl:px-8 bg-green"
+              data-aos="zoom-in"
+            >
+              Find Your Way
+            </button>
+          </div>
+          <div
+            class="hidden xl:block px-12 py-4 max-w-max sha-down1 absolute left-[4%] bottom-[-20%] bg-white"
+          >
+            <div class="grid items-center place-items-center">
+              <h4 class="pb-4 border-b-2 border-gray-900 max-w-max">
+                Customized For
+              </h4>
+              <div
+                class="my-5 overflow-hidden rounded-full w-14 h-14 bg-green33"
+              >
+                <img
+                  src="./asset/images/court-cook-TSZo17r3m0s-unsplash-removebg 1.png"
+                  alt=""
+                  class="object-cover max-w-full"
+                />
+              </div>
+              <p class="text-textGray mb-7">Mikayla</p>
+              <h3 class="text-xl font-semibold mb-7">Your custom contents</h3>
+              <ul>
+                <li>• Understand Your Stress</li>
+                <li>• Anger Management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="w-full max-w-full bg-bgFooter">
+      <div class="layout-container">
+        <ul class="py-10">
+          <li class="mb-8 text-3xl font-semibold text-white">Alivio</li>
+          <li class="mb-8 text-white" data-aos="fade-right">
+            <a href="#!" class="footer-links">Why Alivio</a>
+          </li>
+          <li class="mb-8 text-white" data-aos="fade-right">
+            <a href="#!" class="footer-links">Solutions</a>
+          </li>
+          <li class="mb-8 text-white" data-aos="fade-right">
+            <a href="#!" class="footer-links">Community</a>
+          </li>
+          <li class="mb-8 text-white" data-aos="fade-right">
+            <a href="#!" class="footer-links">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
